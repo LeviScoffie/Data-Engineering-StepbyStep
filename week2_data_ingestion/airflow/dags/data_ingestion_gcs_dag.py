@@ -4,16 +4,10 @@ import logging
 
 from airflow import DAG
 from airflow.utils.dates import days_ago
-from airflow.operators.bash import BashOperator
-from airflow.operators.python import PythonOperator
-
-## FROM THE REQUIREMENTS INSTALLED THROUGH THE requirements.txt file when build docker conatiner.
-from google.cloud import storage #to interact with gcs storage
 
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator # to interact with bigquery ino
 #inorder to create an external table
-import pyarrow.csv as pv # convert dataset into parquet before converted to gcs. but not needed since already in parquet.
-import pyarrow.parquet as pq
+
 
 
 #import some values from env variables in docker-compose yml. setup into our local variables.

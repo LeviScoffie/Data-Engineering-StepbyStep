@@ -177,3 +177,8 @@ This query becomes `SELECT A SUM(C) FROM (R1) UNION ALL ..(R1n)GROUP BY A`
 fUrther divided into other queries. after the modified queries the leaf nodes now talk to Colossus database that fetches the data executes appropriate operations and returns data back to mixers > root servers > results.
 
 This is why BQ is very fast and speedy.
+
+
+Decided to use the lightweight version of airflow in week3.
+Steps in the readme in airflow folder.
+

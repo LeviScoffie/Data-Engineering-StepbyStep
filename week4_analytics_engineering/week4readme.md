@@ -133,7 +133,7 @@ When tables/views are created from dbt models, we can call them by using the mac
 
 
 In the sources.yml file we define the sources and the freshness checks.
-E.g to each source in the tabke, we could define a field that is being used to load that data from sources. So for example, the data is being loaded every hour; so then a freshness thsheold of 3 hours.
+E.g to each source in the table, we could define a field that is being used to load that data from sources. So for example, the data is being loaded every hour; so then a freshness thsheold of 3 hours.
 
 
 **Macros** 
@@ -141,4 +141,4 @@ E.g to each source in the tabke, we could define a field that is being used to l
 
  - Use the control structures; (e.g if statements and for loops) in SQL
  - However, this is not going to return a result but a code. e.g we have 2 params 'a' and 'b' and want to concat them; normall the reuslt would be 'ab' or sth but becasue of the macro, it would return the code to concat both params.
- - Help us to mainatain smae type of transformation inside our models and then we only wtite it ones jus like fxns in python
+ - Help us to mainatain smae type of transformation inside our models and then we only wtite it ones jus like fxns in python.
